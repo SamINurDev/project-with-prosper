@@ -4,29 +4,52 @@
 <head>
   <meta charset="UTF-8">
   <title>Fork Me! FCC: Test Suite Template</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <h1 id="title">freeCodeCamp Survey Form</h1>
   <p id="description">Thank you for taking the time to help us improve our platform</p>
   <form id="survey-form">
-    <input id="name" type="text" placeholder="Enter your name" />
-    <input id="email" type="email" placeholder="Enter your email" />
+    <label id="name-label">Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required /><br>
+    <label id="email-label">Email:</label>
+    <input id="email" type="email" placeholder="Enter your email" required /><br>
+    <label id="number-label">Number:</label>
+    <input id="number" type="number" placeholder="Enter your number" min="1000" max="2000"<br>
+    <select id="dropdown">
+      <option>USA</option>
+      <option>Saudi Arabia</option>
+      <option>Tanzania</option>
+    </select>
+    <br>
+    <input type="radio" value="html" name="frontend" />
+    <label for="html">Html</label><br>
+    <input type="radio" value="css" name="frontend" />
+    <label for="css">Css</label><br>
+    <input type="radio" value="javascript" name="frontend" />
+    <label for="javascript">Javascript</label><br><br>
+
+      <input type="checkbox" value="jave" />
+      <label for="java">Java</label><br>
+      <input type="checkbox" value="python" />
+      <label for="java">Python</label><b>
+      <input type="checkbox" value="Java" />
+      <label for="java">Java</label><br> <br>
+
+      <textarea> </textarea><br>
+
+      <button id="submit">Submit</button>
   </form>
   <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
   <!--
-
     Hello Camper!
-
     For now, the test suite only works in Chrome!
     Please read the README below in the JS Editor before beginning.
     Feel free to delete this message once you have read it.
     Good luck and Happy Coding!
-
     - The freeCodeCamp Team
-
     -->
   <script src="js/index.js"></script>
 </body>
